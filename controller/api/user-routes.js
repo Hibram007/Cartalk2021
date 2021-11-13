@@ -23,6 +23,7 @@ router.get('/:id', (req, res) => {
     },
     include: [
       {
+        //change post url attribute to post text
         model: Post,
         attributes: ['id', 'title', 'post_url', 'created_at']
       },
