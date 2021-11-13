@@ -1,7 +1,7 @@
 // /* Handlebars template */
 const exphbs = require('express-handlebars');
 const express = require('express');
-// const routes = require('./controller/');
+const routes = require('./controller/');
 const sequelize = require('./config/connection');
 // /* Linking the stylesheet */
 const path = require('path');
@@ -42,14 +42,14 @@ app.use(express.static(path.join(__dirname, 'public')));
 // //Front end code ( )
 app.use(express.static('public'));
 // to turn on routes for DB -back end
-// app.use(routes);
+app.use(routes);
 
 //setup routes
-app.get('/', (req, res) => {
-  res.render("login")
-    // res.sendFile(path.join(__dirname, './public/index.html'));
-    // res.send("server started!")
-  });
+// app.get('/', (req, res) => {
+//   res.render("login")
+//     // res.sendFile(path.join(__dirname, './public/index.html'));
+//     // res.send("server started!")
+//   });
   
 // Start the server on the port
 // to turn on connection to DB and server - back end for sequelize part
