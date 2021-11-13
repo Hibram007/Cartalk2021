@@ -1,8 +1,8 @@
 // import all models
 const Vote = require('./vote');
-// const Review = require('./review');
+// const Review = require('./Review');
 
-// const User = require('./user');
+const User = require('./User');
 const Post = require('./Post');
 const Comment = require('./Comment');
 

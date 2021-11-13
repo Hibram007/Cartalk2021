@@ -1,6 +1,6 @@
 const router = require('express').Router();
-const { Post, Comment, Vote } = require('../../models');
-//User, Review
+const { Post, Comment, Vote, User } = require('../../models');
+// Review
 
 // READ (CRUD) route to get all users
 // router.get('/', (req, res) => {
