@@ -4,6 +4,7 @@ module.exports = {
         date
       ).getFullYear()}`;
     },
+    //Probably get rid of format url - check if it messes with anything
     format_url: url => {
       return url
         .replace('http://', '')
