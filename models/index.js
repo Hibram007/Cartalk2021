@@ -57,9 +57,9 @@ Post.hasMany(Vote, {
 //   foreignKey: 'review_id'
 // });
 
-// User.hasMany(Vote, {
-//   foreignKey: 'user_id'
-// });
+User.hasMany(Vote, {
+  foreignKey: 'user_id'
+});
 
 // Review.hasMany(Vote, {
 //   foreignKey: 'review_id'
