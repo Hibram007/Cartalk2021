@@ -38,6 +38,7 @@ app.engine('handlebars', hbs.engine);
 app.set('view engine', 'handlebars');
 //Linking the style sheet //
 app.use(express.static(path.join(__dirname, 'public')));
+app.use(require('./controller/'));
 
 // //Front end code ( )
 app.use(express.static('public'));
@@ -54,6 +55,6 @@ app.get('/', (req, res) => {
 // Start the server on the port
 // to turn on connection to DB and server - back end for sequelize part
 sequelize.sync({ force: false }).then(() => {
-app.listen(PORT, () => console.log(`Listening on PORT: ${PORT}`));
+  app.listen(PORT, () => console.log(`Listening on PORT: ${PORT}`));
 });
 
