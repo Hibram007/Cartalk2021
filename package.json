@@ -1,0 +1,34 @@
+{
+  "name": "car-talk",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "jest",
+    "start": "node server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "connect-session-sequelize": "^7.1.2",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "express-handlebars": "^5.3.4",
+    "express-session": "^1.17.2",
+    "handlebars": "^4.7.7",
+    "mysql2": "^2.3.3-rc.0",
+    "sequelize": "^6.9.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tylers22/cartalk_group2project.git"
+  },
+  "bugs": {
+    "url": "https://github.com/tylers22/cartalk_group2project/issues"
+  },
+  "homepage": "https://github.com/tylers22/cartalk_group2project#readme",
+  "devDependencies": {
+    "jest": "^27.3.1"
+  }
+}
