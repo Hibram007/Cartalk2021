@@ -1,6 +1,7 @@
 const router = require('express').Router();
 const { Comment } = require('../../models');
 const withAuth = require('../../utils/auth');
+
 // ask TA to help get this GET route going / review M.13 Comment GET routes
 router.get('/', (req, res) => {
   Comment.findAll()
