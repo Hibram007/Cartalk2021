@@ -45,11 +45,11 @@ app.use(express.static('public'));
 app.use(routes);
 
 //setup routes
-// app.get('/', (req, res) => {
-//   res.render("login")
-//     // res.sendFile(path.join(__dirname, './public/index.html'));
-//     // res.send("server started!")
-//   });
+app.get('/', (req, res) => {
+  res.render("login")
+    // res.sendFile(path.join(__dirname, './public/index.html'));
+    // res.send("server started!")
+  });
   
 // Start the server on the port
 // to turn on connection to DB and server - back end for sequelize part
