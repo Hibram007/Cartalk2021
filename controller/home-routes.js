@@ -1,6 +1,5 @@
 
-/* This file will contain all of the user-facing 
-routes, such as the homepage and login page 
+/* all of the user-facing routes, such as the homepage and login page 
 Still needs url */
 const router = require('express').Router();
 //importing the necessary modules and models
@@ -13,6 +12,7 @@ router.get('/', (req, res) => {
   Post.findAll({
     attributes: [
       'id',
+      //Post url removal
       'post_url',
       'title',
       'created_at',

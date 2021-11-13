@@ -11,6 +11,7 @@ router.get('/', (req, res) => {
     Post.findAll({
       attributes: [
         'id',
+        //post url change to post text
         'post_url',
         'title',
         'created_at',
@@ -46,6 +47,7 @@ router.get('/:id', (req, res) => {
     },
     attributes: [
       'id',
+      //change post-url to post -text
       'post_url',
       'title',
       'created_at',
@@ -84,6 +86,7 @@ router.post('/', (req, res) => {
   if (req.session) {
     Post.create({
       title: req.body.title,
+      //post url change to post text
       post_url: req.body.post_url,
       user_id: req.session.user_id
     })
