@@ -12,7 +12,7 @@ router.get('/', (req, res) => {
       attributes: [
         'id',
         //post url change to post text
-        'post_url',
+        //'post_url',
         'title',
         'created_at',
         [sequelize.literal('(SELECT COUNT(*) FROM vote WHERE post.id = vote.post_id)'), 'vote_count']
@@ -48,7 +48,7 @@ router.get('/:id', (req, res) => {
     attributes: [
       'id',
       //change post-url to post -text
-      'post_url',
+      //'post_url',
       'title',
       'created_at',
       [sequelize.literal('(SELECT COUNT(*) FROM vote WHERE post.id = vote.post_id)'), 'vote_count']
@@ -87,7 +87,7 @@ router.post('/', (req, res) => {
     Post.create({
       title: req.body.title,
       //post url change to post text
-      post_url: req.body.post_url,
+     // post_url: req.body.post_url,
       user_id: req.session.user_id
     })
       .then(dbPostData => res.json(dbPostData))

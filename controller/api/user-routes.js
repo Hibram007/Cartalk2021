@@ -25,7 +25,7 @@ router.get('/:id', (req, res) => {
       {
         //change post url attribute to post text
         model: Post,
-        attributes: ['id', 'title', 'post_url', 'created_at']
+        attributes: ['id', 'title', /*'post_url',*/ 'created_at']
       },
       {
         model: Comment,
