@@ -20,12 +20,20 @@
       </h1>
       <!-- Add other buttons depending on the layout - About Us? Reviews? Bio?-->
      <nav>
-        {{#if loggedIn}}
-        <a href="/dashboard">dashboard</a>
-        <button id="logout" class="btn-no-style">logout</button>
-        {{else}}
-        <a href="/login">login</a>
-        {{/if}}
+       <ul>
+         <li>
+         {{#if loggedIn}}
+          <a href="/dashboard">dashboard</a>
+        </li>
+        <li>
+         <button id="logout" class="btn-no-style">logout</button>
+        </li>
+        <li>
+          {{else}}
+          <a href="/login">login</a>
+          {{/if}}
+        </li>
+      </ul>
       </nav>
     </header>
     <main>

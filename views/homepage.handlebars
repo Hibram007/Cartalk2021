@@ -1,3 +1,56 @@
+ <!-- hero/jumbotron -->
+    <section class="Jumbotron">
+      <div class="Cartalk-description">
+        <h2>The Latest Car information At Your fingertips! </h2>
+        <p>
+          Find the latest car reviews for some of the hottest cars on the market! 
+          Look at our array of car options and select YES for any of the cars you are intrested in seeing their data and reviews! 
+          Want to contribute to a global endevour? Feel free to create your own reviews and make comments as well!
+        </p>
+      </div>
+
+ <div class="car-form">
+        <h3>Find Car Reviews Today In Minutes!</h3>
+        <p>Select YES on a car option to get car data and reviews. 
+           Select NO to not get any data or reviews for a car option.</p>
+        <form>
+          <!--Car 1 -->
+          <span class="radio-wrapper">
+            <input type="radio" name="car1-confirm" id="car1-yes" />
+            <label for="car1-yes">Yes</label>
+          </span>
+          <span class="radio-wrapper">
+            <input type="radio" name="car1-deny" id="car1-no"/>
+            <label for="car1-no">No</label>
+          </span>
+
+          <!--Car 2 -->
+          <span class="radio-wrapper">
+            <input type="radio" name="car2-confirm" id="car2-yes" />
+            <label for="car2-yes">Yes</label>
+          </span>
+          <span class="radio-wrapper">
+            <input type="radio" name="car2-deny" id="car2-no"/>
+            <label for="car2-no">No</label>
+          </span>
+
+          <!--Car 3 -->
+          <span class="radio-wrapper">
+            <input type="radio" name="car3-confirm" id="car3-yes" />
+            <label for="car3-yes">Yes</label>
+          </span>
+          <span class="radio-wrapper">
+            <input type="radio" name="car3-deny" id="car3-no"/>
+            <label for="car3-no">No</label>
+          </span>
+        </p>
+          <button type="submit">
+            Get Car Reviews!
+          </button>
+        </form>
+      </div>
+    </section>
+
 <ol class="post-list">
   {{#each posts as |post|}}
   <li>
