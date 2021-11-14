@@ -33,16 +33,24 @@
           <a href="/login">login</a>
           {{/if}}
         </li>
+        <!-- New addition for About Us Nav bar- check this code is correct-->
+        <li>
+           <a href="#about-us"> About Us</a>
+        </li>
       </ul>
       </nav>
     </header>
+    <!-- This is where homepage template gets passed in-->
     <main>
       {{{ body }}}
     </main>
     <footer>
-      <!-- Add whatever we want it to end with-->
+      <!-- Name - year - personalized message-->
+         <h2> 🤘🏽 Made with hardwork and sleepless nights😪 by Nick Dixon and Hibram Sanchez.</h2>
+      <div>
+        &copy;💮🌸 2021 White and Red Lotus, Inc.
+      </div>
     </footer>
-    
   </div>
   {{#if loggedIn}}
   <script src="/javascript/logout.js"></script>

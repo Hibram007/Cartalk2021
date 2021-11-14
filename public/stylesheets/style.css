@@ -84,7 +84,13 @@
     justify-content: space-between;
     align-items: center;
     padding: 0 1%;
-
+    /* css styling for header image and background new code 11/14 -Hibram */
+    background-image: url('public\stylesheets\images\lambo.jpeg'); 
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-position: 80%;
+    z-index: 9999;
   }
   
   header h1 {
