@@ -50,13 +50,13 @@ Post.init(
         allowNull: false
       },
       // //chnage post-url to the post text
-      // post_url: {
-      //   type: DataTypes.STRING,
-      //   allowNull: false,
-      //   validate: {
-      //     isURL: true
-      //   }
-      // },
+      post_url: {
+        type: DataTypes.STRING,
+        allowNull: false,
+        validate: {
+          isURL: true
+        }
+      },
       user_id: {
         type: DataTypes.INTEGER,
         references: {
