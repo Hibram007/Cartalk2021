@@ -5,25 +5,35 @@
   
   body, html {
     height: 100%;
-    padding: 0;
-    margin: 0;
-    font-family: sans-serif;
-    color: #333;
+  }
+
+  .parallax {
+    /* The image used */
+    background-image: url("https://user-images.githubusercontent.com/87105978/141719817-c55bd888-bd6c-4565-9873-d48212e23c6a.jpeg");
+  
+    /* Full height */
+    height: 100%;
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
   }
   
   a {
     text-decoration: none;
-    color: #225ca3;
+    color: rgb(88, 86, 86);
     font-weight: bold;
     transition: color .1s;
   }
   
   a:hover {
-    color: #3486eb;
+    color: silver;
   }
   
   button {
-    background-color: #225ca3;
+    background-color: rgb(0, 0, 0);
     border: 0;
     padding: 1%;
     color: white;
@@ -34,7 +44,7 @@
   }
   
   button:hover {
-    background-color: #3486eb;
+    background-color: rgb(223, 0, 223);
   }
   
   .post-list {
@@ -45,16 +55,16 @@
   textarea, input {
     padding: .5%;
     border-radius: 5px;
-    border: 1px solid #ccc;
+    border: 1px solid black;
   }
   
   textarea:focus, input:focus {
     outline: none;
-    border: 1px solid #3486eb;
+    border: 1px solid rgb(223, 0, 223);
   }
   
   textarea {
-    min-width: 40%;
+    width: 0%;
     min-height: 100px;
   }
   
@@ -74,8 +84,6 @@
     display: flex;
     flex-direction: column;
     line-height: 1.6em;
-    border-radius: 10px;
-    border: 3px black solid;
   }
   
   header {
@@ -89,7 +97,7 @@
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-    background-position: 80%;
+    background-position: 50%;
     z-index: 9999;
   }
   
@@ -183,7 +191,7 @@
   }
   
   footer {
-    border-top: 1px solid #ccc;
+    border-top: 1px solid black;
     display: flex;
     justify-content: center;
     padding: 1%;
