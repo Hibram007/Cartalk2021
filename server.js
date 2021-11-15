@@ -54,7 +54,7 @@ app.get('/', (req, res) => {
   
 // Start the server on the port
 // to turn on connection to DB and server - back end for sequelize part
-sequelize.sync({ force: true }).then(() => {
+sequelize.sync({ force: false }).then(() => {
   app.listen(PORT, () => console.log(`Listening on PORT: ${PORT}`));
 });
 
