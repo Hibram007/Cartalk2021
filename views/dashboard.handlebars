@@ -15,11 +15,10 @@
   </form>
 </section>
 
-<h1> Dashboard</h1>
 {{#if posts.length}}
 <section>
   <h2>Your Posts</h2>
-  <ol>
+  <ol class="ol">
     {{#each posts as |post|}}
     <li>
       {{> post-info post}}
