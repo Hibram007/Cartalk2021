@@ -93,6 +93,7 @@
     align-items: center;
     padding: 0 1%;
     /* css styling for header image and background new code 11/14 -Hibram */
+    /* background-image: url('public\stylesheets\images\arrow.jpg') */
     background-image: url('public\stylesheets\images\lambo.jpeg'); 
     background-size: cover;
     background-position: center;
